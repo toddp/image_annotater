@@ -55,8 +55,6 @@ production:
   database: image_annotater_production
   #pool: 5
   pool: <%= ENV["DB_POOL"] || ENV['RAILS_MAX_THREADS'] || 5 %>
-  username:
-  password:
 
 
 
@@ -67,5 +65,3 @@ staging:
   database: image_annotater_staging
   #pool: 5
   pool: <%= ENV["DB_POOL"] || ENV['RAILS_MAX_THREADS'] || 5 %>
-  username:
-  password:
