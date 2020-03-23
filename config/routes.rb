@@ -1,4 +1,7 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
+  root 'items#index'
   resources :items
   resources :labels
   post 'items/get_labels' => 'items#get_labels'
